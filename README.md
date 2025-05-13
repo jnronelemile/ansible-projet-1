@@ -10,19 +10,6 @@ Ce projet est une initiation pratique à Ansible pour automatiser la configurati
 - Déployer un message de bienvenue personnalisé dans `/etc/motd`
 
 ## 📁 Structure du projet
-
-# 🛠️ Projet Ansible – Déploiement Serveur (Niveau 5/10)
-
-Ce projet est une initiation pratique à Ansible pour automatiser la configuration d’un serveur Ubuntu.
-
-## 🚀 Objectifs
-
-- Créer un utilisateur `deploy` avec sudo
-- Installer et activer `nginx`
-- Configurer le pare-feu `ufw` (ouverture des ports 22 et 80)
-- Déployer un message de bienvenue personnalisé dans `/etc/motd`
-
-## 📁 Structure du projet
 ```markdown
 ├── inventory
 ├── README.md
@@ -44,11 +31,11 @@ ansible-playbook -i inventory site.yml
 ```
 ## 📦 Prérequis
 
-    - Ansible installé sur le noeud de contrôle (ansible-master)
+- Ansible installé sur le noeud de contrôle (ansible-master)
 
-    - Connexion SSH fonctionnelle avec node1 via clé SSH (~/.ssh/id_ansible)
+- Connexion SSH fonctionnelle avec node1 via clé SSH (~/.ssh/id_ansible)
 
-    - Accès sudo sans mot de passe pour l'utilisateur vagrant sur le noeud cible
+- Accès sudo sans mot de passe pour l'utilisateur vagrant sur le noeud cible
 
 
 ## 🧱 Vagrantfile
@@ -59,3 +46,4 @@ Lancez-les avec :
 
 ```bash
 vagrant up
+```
