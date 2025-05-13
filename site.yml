@@ -1,0 +1,8 @@
+---
+
+- name: Deploiement de base
+  hosts: node1
+  become: true
+  
+  roles:
+    - server_setup

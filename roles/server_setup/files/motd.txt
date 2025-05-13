@@ -1,0 +1,7 @@
+Bienvenue sur mon serveur géré par Ansible 🚀
+Ce serveur est configuré automatiquement pour vous offrir la meilleure expérience possible.
+N'hésitez pas à explorer et à profiter de toutes les fonctionnalités qu'il a à offrir.
+N'oubliez pas de consulter la documentation pour plus d'informations sur la configuration et l'utilisation.
+Si vous avez des questions ou des préoccupations, n'hésitez pas à contacter l'administrateur système.
+Profitez de votre séjour ! 🎉
+-------------------------------------------------

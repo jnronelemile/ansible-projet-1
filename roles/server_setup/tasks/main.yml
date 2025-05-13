@@ -1,0 +1,50 @@
+---
+
+- name: Creer l'utilisateur deploy
+  user:
+    name: "{{user_name}}"
+    state: present
+    shell: /bin/bash
+    groups: sudo
+    create_home: yes
+
+- name: Installer nginx et ufw
+  apt:
+    name: "{{item}}"
+    state: present
+    update_cache: yes
+
+  loop:
+    - nginx
+    - ufw
+
+- name: Activer et demarer nginx
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+
+- name: Activerle firewall
+  ufw: 
+    state: enabled
+    policy: deny
+
+- name: Activer le port SSH
+  ufw:
+    rule: allow
+    port: 22
+
+- name: Activer le port HTTP
+  ufw:
+    rule: allow
+    port: 80
+
+
+- name: Depoyer le message motd
+  copy:
+    src: motd.txt
+    dest: /etc/motd.txt
+    owner: root
+    group: root
+    mode: "0644"
+  
