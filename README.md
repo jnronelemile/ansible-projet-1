@@ -23,7 +23,7 @@ Ce projet est une initiation pratique à Ansible pour automatiser la configurati
 - Déployer un message de bienvenue personnalisé dans `/etc/motd`
 
 ## 📁 Structure du projet
-
+```markdown
 ├── inventory
 ├── README.md
 ├── roles
@@ -36,12 +36,12 @@ Ce projet est une initiation pratique à Ansible pour automatiser la configurati
 │           └── main.yml
 ├── site.yml
 └── Vagrantfile
-
+```
 ## 🔧 Usage
 
 ```bash
 ansible-playbook -i inventory site.yml
-
+```
 ## 📦 Prérequis
 
     - Ansible installé sur le noeud de contrôle (ansible-master)
