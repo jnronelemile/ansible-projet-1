@@ -1,4 +1,4 @@
-# 🛠️ Mini-Projet Ansible – Déploiement Serveur (Niveau 5/10)
+# 🛠️ Mini-Projet Ansible – Déploiement Serveur 
 
 Ce projet est une initiation pratique à Ansible pour automatiser la configuration d’un serveur Ubuntu.
 
